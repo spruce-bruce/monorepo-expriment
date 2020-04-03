@@ -1,0 +1,9 @@
+{
+  "name": "api",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "@hapi/hapi": "^19.1.1"
+  }
+}
