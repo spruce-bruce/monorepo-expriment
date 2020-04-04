@@ -1,9 +1,9 @@
 # HELLO
 
 ## Deps
-install yarn
-install docker
-install pm2
+- install yarn
+- install docker
+- install pm2
 
 ## Start
 clone the project then
