@@ -4,6 +4,7 @@
     "start": "node index.js"
   },
   "dependencies": {
-    "@hapi/hapi": "^19.1.1"
+    "@hapi/hapi": "^19.1.1",
+    "shared": "workspace:packages/shared"
   }
 }

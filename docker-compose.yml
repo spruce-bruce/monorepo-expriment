@@ -1,0 +1,13 @@
+version: '2.1'
+services:
+  postgres:
+    image: postgres:9.6.1
+    env_file:
+      - ./common.env
+  redis:
+    image: redis
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:5.5.3
+    environment:
+      discovery.type: single-node
+      ES_JAVA_OPTS: "-Xms750m -Xmx750m"
