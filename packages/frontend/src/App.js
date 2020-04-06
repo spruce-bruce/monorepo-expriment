@@ -3,7 +3,6 @@ import logo from './logo.svg';
 import './App.css';
 import shared from 'shared';
 
-
 function App() {
   return (
     <div className="App">
@@ -18,7 +17,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Learn React { shared.KEY }
         </a>
       </header>
     </div>
