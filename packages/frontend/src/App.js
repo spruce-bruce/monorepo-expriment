@@ -3,6 +3,8 @@ import logo from './logo.svg';
 import './App.css';
 import shared from 'shared';
 
+import Component from 'shared/Component';
+
 function App() {
   return (
     <div className="App">
@@ -18,6 +20,7 @@ function App() {
           rel="noopener noreferrer"
         >
           Learn React { shared.KEY }
+          <Component />
         </a>
       </header>
     </div>
