@@ -1,12 +1,12 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-
+.yarn/*
+!.yarn/releases
+!.yarn/plugins
+.pnp.*
 # dependencies
 /node_modules
 /.pnp
 .pnp.js
-.yarn/*
-!.yarn/releases
-!.yarn/plugins
 
 # testing
 /coverage

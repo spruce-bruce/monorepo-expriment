@@ -3815,9 +3815,9 @@ __metadata:
   linkType: hard
 
 "caniuse-lite@npm:^1.0.0, caniuse-lite@npm:^1.0.30000981, caniuse-lite@npm:^1.0.30001035, caniuse-lite@npm:^1.0.30001036, caniuse-lite@npm:^1.0.30001038":
-  version: 1.0.30001038
-  resolution: "caniuse-lite@npm:1.0.30001038"
-  checksum: 2/ea241b85fe7f0c4bb98e0b505def4141d21b330203097e3ec7adaad33fb2839b0e7bcfa98269cd2a4050de892a10c3282d8f4ba21acabb2b068a16da8360cdc9
+  version: 1.0.30001039
+  resolution: "caniuse-lite@npm:1.0.30001039"
+  checksum: 2/6eb77c44e5e2c156fe5b244a4fba0ceb272ddb9e7cd61891fa74fd36788fa8aa2fb85586ee51f9c60c9f4a976da7daa2e479652a54894e7f72fbd8b48a36cbef
   languageName: node
   linkType: hard
 
@@ -4779,6 +4779,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"customize-cra@npm:^0.9.1":
+  version: 0.9.1
+  resolution: "customize-cra@npm:0.9.1"
+  dependencies:
+    lodash.flow: ^3.5.0
+  checksum: 2/7e4a20466d5d6694da2d8b878cb46d6a78d7ee854e0d5531d1c42f26eed521b31dcbe6a1a8ba304c858c51ed330d219b74bad85a73b67f11f77470ddf6cab8ba
+  languageName: node
+  linkType: hard
+
 "cyclist@npm:^1.0.1":
   version: 1.0.1
   resolution: "cyclist@npm:1.0.1"
@@ -5265,9 +5274,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.3.378, electron-to-chromium@npm:^1.3.390":
-  version: 1.3.395
-  resolution: "electron-to-chromium@npm:1.3.395"
-  checksum: 2/8631a18e3d82df1d5474e8a55c3a652aed8dd0df350663a302d4507cebcd86983309d3d9a880335e32f83480990d57128d3e99787230c043b86d2db3e2923807
+  version: 1.3.397
+  resolution: "electron-to-chromium@npm:1.3.397"
+  checksum: 2/622ccf64598ca7f0923ad3e31ff479560a82b6c3e18a3b1f373598a43eea95efd03776b9459755546952816ce890f6b61fef5aa065a8aaa751ca9fd8692a4abc
   languageName: node
   linkType: hard
 
@@ -6162,6 +6171,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"find-root@npm:^1.1.0":
+  version: 1.1.0
+  resolution: "find-root@npm:1.1.0"
+  checksum: 2/34f9eeb7258b3b5e270824a11bae4a8e6075efe79a319c034a3c5cae90cdb558c524c42ff7938b1200f648349c9dc04e860c8eaef852c802f5a1c26fa04d5ab1
+  languageName: node
+  linkType: hard
+
 "find-up@npm:4.1.0, find-up@npm:^4.0.0":
   version: 4.1.0
   resolution: "find-up@npm:4.1.0"
@@ -6341,7 +6357,11 @@ __metadata:
     "@testing-library/jest-dom": ^4.2.4
     "@testing-library/react": ^9.3.2
     "@testing-library/user-event": ^7.1.2
+    customize-cra: ^0.9.1
+    get-yarn-workspaces: ^1.0.2
     react: ^16.13.1
+    react-app-rewire-yarn-workspaces: ^1.0.3
+    react-app-rewired: ^2.1.5
     react-dom: ^16.13.1
     react-scripts: 3.4.1
     shared: "workspace:packages/shared"
@@ -6531,6 +6551,17 @@ fsevents@^1.2.7:
   version: 2.0.6
   resolution: "get-value@npm:2.0.6"
   checksum: 2/f08da3262718e0f2617703cc99ecd0ddb4cca1541b0022118f898824c99157778e044c802160688dc184b17e5a894d11c5771aaadc376c68cdf66bdbc25ff865
+  languageName: node
+  linkType: hard
+
+"get-yarn-workspaces@npm:^1.0.0, get-yarn-workspaces@npm:^1.0.2":
+  version: 1.0.2
+  resolution: "get-yarn-workspaces@npm:1.0.2"
+  dependencies:
+    find-root: ^1.1.0
+    flatten: ^1.0.2
+    glob: ^7.1.2
+  checksum: 2/b980b598b3e34118ce39c789a9e589463095f240037b356278914d154fdb8d5b8f76e4f3ef01c55cc7128b018be040a732b538cb04b46eddd43fdc38b20949db
   languageName: node
   linkType: hard
 
@@ -8470,13 +8501,13 @@ fsevents@^1.2.7:
   linkType: hard
 
 "json5@npm:^2.1.2":
-  version: 2.1.2
-  resolution: "json5@npm:2.1.2"
+  version: 2.1.3
+  resolution: "json5@npm:2.1.3"
   dependencies:
     minimist: ^1.2.5
   bin:
     json5: lib/cli.js
-  checksum: 2/ca20dbb73c4ccb7c9cd8ec5d9c6f005294e25868d435825f147dde58a8f1fc5fe9397d3afcd12d26f765fe14d4b35add81f1bc5fece33c6b1c8d1a69625a43e8
+  checksum: 2/957e4937106cf59975aa0281e68911534d65c8a25be5b4d3559aa55eba351ccab516a943a60ba33e461e4b8af749939986e311de910cbcfd197410b57d971741
   languageName: node
   linkType: hard
 
@@ -8745,6 +8776,13 @@ fsevents@^1.2.7:
   version: 3.0.0
   resolution: "lodash._reinterpolate@npm:3.0.0"
   checksum: 2/27513557d6fe526296324f1de9e1b8e8ac88ef2a2544a655e825f3ab0f52c5a675f1a73a0c9ff3c64fda031c56dfb4deb9dac7c7d21f9a04bc63dd7db5a5a73d
+  languageName: node
+  linkType: hard
+
+"lodash.flow@npm:^3.5.0":
+  version: 3.5.0
+  resolution: "lodash.flow@npm:3.5.0"
+  checksum: 2/52204602c6ec53e78497387751bf2cf432a9db7b0982e62b01b489be847b68efde8f7efed6fbeaeaeb66d7c7bd171d389c32d548908eafc00958bba8d462e55a
   languageName: node
   linkType: hard
 
@@ -9946,11 +9984,11 @@ fsevents@^1.2.7:
   linkType: hard
 
 "p-limit@npm:^2.0.0, p-limit@npm:^2.2.0, p-limit@npm:^2.2.2":
-  version: 2.2.2
-  resolution: "p-limit@npm:2.2.2"
+  version: 2.3.0
+  resolution: "p-limit@npm:2.3.0"
   dependencies:
     p-try: ^2.0.0
-  checksum: 2/10cd927c1e3b6c66a294dd803bc05acd721d003b7c8c16d6648f133b4f47853f37d6895096e56cbbc4d10009f8380b7679e4f0220ead74c82f5b036e45bbb520
+  checksum: 2/5f20492a25c5f93fca2930dbbf41fa1bee46ef70eaa6b49ad1f7b963f309e599bc40507e0a3a531eee4bcd10fec4dd4a63291d0e3b2d84ac97d7403d43d271a9
   languageName: node
   linkType: hard
 
@@ -11562,6 +11600,28 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
+"react-app-rewire-yarn-workspaces@npm:^1.0.3":
+  version: 1.0.3
+  resolution: "react-app-rewire-yarn-workspaces@npm:1.0.3"
+  dependencies:
+    get-yarn-workspaces: ^1.0.0
+  checksum: 2/711cdee3a8f926c9f2c022742ea99d3a1c20899c00d80d8918b337380b983533b657ac2ae107314a53f6c15d45145d5bb094ac17c01d2a21427fcbbb80d3d304
+  languageName: node
+  linkType: hard
+
+"react-app-rewired@npm:^2.1.5":
+  version: 2.1.5
+  resolution: "react-app-rewired@npm:2.1.5"
+  dependencies:
+    semver: ^5.6.0
+  peerDependencies:
+    react-scripts: ">=2.1.3"
+  bin:
+    react-app-rewired: ./bin/index.js
+  checksum: 2/860d59bf874f097fed89b29e364873e19bb34d7dc003bd339412d351b299f2b0abffcbf80a06e520395593ce498cad3cf4c046be34e894380eb82b55a9854de7
+  languageName: node
+  linkType: hard
+
 "react-dev-utils@npm:^10.2.1":
   version: 10.2.1
   resolution: "react-dev-utils@npm:10.2.1"
@@ -11895,9 +11955,9 @@ fsevents@^1.2.7:
   linkType: hard
 
 "regexpp@npm:^3.0.0":
-  version: 3.0.0
-  resolution: "regexpp@npm:3.0.0"
-  checksum: 2/9528ff2d4d4c85c80ae866c558d8b61ae7da69dad240f4a8d69e73be51a04d466e5c6808e06837737eaf8ec499d41126ab397693ab5d0a1039376855ce331566
+  version: 3.1.0
+  resolution: "regexpp@npm:3.1.0"
+  checksum: 2/69d0ce6b449cf35d3732d6341a1e70850360ffc619f8eef10629871c462e614853fffb80d3f00fc17cd0bb5b8f34b0cde5be4b434e72c0eb3fbba2360c8b5ac4
   languageName: node
   linkType: hard
 
@@ -12858,15 +12918,15 @@ resolve@1.1.7:
   linkType: hard
 
 "spdy@npm:^4.0.1":
-  version: 4.0.1
-  resolution: "spdy@npm:4.0.1"
+  version: 4.0.2
+  resolution: "spdy@npm:4.0.2"
   dependencies:
     debug: ^4.1.0
     handle-thing: ^2.0.0
     http-deceiver: ^1.2.7
     select-hose: ^2.0.0
     spdy-transport: ^3.0.0
-  checksum: 2/a4bfb5aad131810b87f5c3cacbc57a6929f53b351c92e10f8278b6d662fa5e971e31ae3f77f6b11f8faf4978a58bc7891612a11cadaf8df1b3fd59dd15b333b5
+  checksum: 2/388d39324d706a0a73d1d16fa93397029b3eb47ff2aaa3ad58c3d9c7682ce53eb847795560dc08190b7e3f8404e8bf4814ff3fd74cf0c849796310f1cd8a5f92
   languageName: node
   linkType: hard
 
@@ -13229,9 +13289,9 @@ resolve@1.1.7:
   linkType: hard
 
 "strip-json-comments@npm:^3.0.1":
-  version: 3.0.1
-  resolution: "strip-json-comments@npm:3.0.1"
-  checksum: 2/b783c8c9c18f5b8de69cf9600235adf11950051dc2ed28dabd05d8e17cd82e138df2dad635c205b3d7c068a644398099a8f1060cee39c93067ef2188dda791ef
+  version: 3.1.0
+  resolution: "strip-json-comments@npm:3.1.0"
+  checksum: 2/5c272f2c030937c99edd8c02f120c2e5cb49ab41e82db689167e3dc84413ee39dbda9f0476b5345827d9f408fd9ffc81b3c0160253ec599d929ac35fa7ce0260
   languageName: node
   linkType: hard
 
@@ -14644,5 +14704,8 @@ resolve@1.1.7:
 "yarn-experiment@workspace:.":
   version: 0.0.0-use.local
   resolution: "yarn-experiment@workspace:."
+  dependencies:
+    customize-cra: ^0.9.1
+    react-app-rewired: ^2.1.5
   languageName: unknown
   linkType: soft
