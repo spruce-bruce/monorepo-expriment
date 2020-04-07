@@ -1,3 +1,3 @@
 module.exports = {
-  KEY: 'VALUE',
+  KEY: 'VALUESSSS',
 };

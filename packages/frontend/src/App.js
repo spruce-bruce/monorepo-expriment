@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import shared from 'shared';
 
+import Component from 'shared/Component';
 
 function App() {
   return (
@@ -18,7 +19,8 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Learn React { shared.KEY }
+          <Component />
         </a>
       </header>
     </div>
