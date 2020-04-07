@@ -6364,7 +6364,6 @@ __metadata:
     react-app-rewired: ^2.1.5
     react-dom: ^16.13.1
     react-scripts: 3.4.1
-    shared: "workspace:packages/shared"
   languageName: unknown
   linkType: soft
 
@@ -6464,7 +6463,7 @@ fsevents@^1.2.7:
   resolution: "fsevents@patch:fsevents@npm%3A2.1.2#builtin<compat/fsevents>::version=2.1.2&hash=77dfe6"
   dependencies:
     node-gyp: latest
-  checksum: 2/8e95236543caafaff54d239eb6d71a7d4827bbb14a9addf5fac11f37fa2c5f91cc84fc60e532403e291175c1745b524e355fee99c3e054ead1f85bdbac55c893
+  checksum: 2/6fb6ae0c1e5aca68fec6c0bf119d0dc9a1d653af60925c7ec69868f0ac68fa6930eeb769745030ecb560e00c144c74068da62bb77a000cc7dc263963ba4e2d7f
   languageName: node
   linkType: hard
 
@@ -6476,7 +6475,7 @@ fsevents@^1.2.7:
     nan: ^2.12.1
     node-gyp: latest
     node-pre-gyp: "*"
-  checksum: 2/f873bb718e0a886c4de803c7282f7379035eaef9955d11c133aa06a44e266801b437dd842115c5f304ee321b2c3444d8526f3c92098d6ffb1dfa203f547ffe82
+  checksum: 2/181d9f88933413ce7653288b743abae38bb12d4327552698dcfa4663583933f79e63e8ce0ec7987ca087e0c49add8f05e735d17ada20bd406403fa603ded93c2
   languageName: node
   linkType: hard
 
@@ -12190,7 +12189,7 @@ resolve@1.1.7:
 "resolve@patch:resolve@1.1.7#builtin<compat/resolve>":
   version: 1.1.7
   resolution: "resolve@patch:resolve@npm%3A1.1.7#builtin<compat/resolve>::version=1.1.7&hash=8fccd0"
-  checksum: 2/876dac138d8a549b2750766bb2289041d00df2810daddb983d1b94eb0014b009f4e54e871afd5f86022a54597a168d1ba3c219e21066e5081bbba072e5ff35af
+  checksum: 2/5238277188664a6948dd7288d16f1a09e098fb36d4f9b2c749130969c998faa9bccefd30fd618073af5210fdc768730cadfc15588bbee4fc64b257f20cab6783
   languageName: node
   linkType: hard
 
@@ -12199,7 +12198,7 @@ resolve@1.1.7:
   resolution: "resolve@patch:resolve@npm%3A1.15.0#builtin<compat/resolve>::version=1.15.0&hash=8fccd0"
   dependencies:
     path-parse: ^1.0.6
-  checksum: 2/108f8aa9503b8178f8bd5474ad9b22b6dc93b2cc9a8ddeeb3dc3770190d0b4f3c38dfe08c855782725ae16b13e4f3418f94c33c9491543b9d9e57eeb8a1ffeb7
+  checksum: 2/a977306c59618000d5954b2fb9d6c100c15f2c4df6acdab3e86bdbd3ae1e8d52e89cbbf19e6dce93ce535af1bba097c26332b1a0f85fd4daa45943ec06d90fe8
   languageName: node
   linkType: hard
 
@@ -12208,7 +12207,7 @@ resolve@1.1.7:
   resolution: "resolve@patch:resolve@npm%3A1.15.1#builtin<compat/resolve>::version=1.15.1&hash=8fccd0"
   dependencies:
     path-parse: ^1.0.6
-  checksum: 2/dceab9e78d618d4ebcef66c1c4c8bb28bc242fbb95625a498d759b6aaac00de0ebb91e9d6560f5f49ac073ab9e9e3e7450449b4bddf740ba8cb267b8b68ea70f
+  checksum: 2/fe7e72ddef33d5c157991b824ba2d439cafcd386cb4b26d86c32e77fea442bdd9a93c6cdd93ab90f87a29449008df64b53a8310dd89ebe88ea87fb5db09c03aa
   languageName: node
   linkType: hard
 

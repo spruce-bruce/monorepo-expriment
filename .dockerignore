@@ -1,0 +1,12 @@
+.yarn/*
+.yarn
+!.yarn/releases
+!.yarn/plugins
+.pnp.*
+.git
+.gitignore
+Dockerfile
+docker-compose.yml
+monorepo_cache
+*/packages/node_modules
+node_modules
