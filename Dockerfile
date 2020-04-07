@@ -18,15 +18,11 @@ RUN set -xe; \
     cd /monorepo; \
     yarn install; \
     npm install -g pm2;
-    # mv entrypoint.sh /usr/local/bin/entrypoint.sh;
 
 # Setup our environment variables.
 ENV \
     PATH="/usr/local/bin:$PATH" \
     VERSION="${VERSION}"
-
-# Set the entrypoint.
-# ENTRYPOINT ["/usr/local/bin/entrypoint.sh"]
 
 # Set the default command (Do nothing)
 CMD ["/bin/sh", "-c", "tail -f /dev/null"]
