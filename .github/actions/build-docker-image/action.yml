@@ -1,5 +1,6 @@
 name: 'Build Docker Image -- Synapse Studios'
 description: 'Greet someone'
+shell: bash
 inputs:
   who-to-greet:  # id of input
     description: 'Who to greet'
@@ -48,7 +49,7 @@ runs:
         target: service
 
     - name: Move cache
-      shell: bash
+      # shell: bash
       run: |
         rm -rf /tmp/.buildx-cache
         mv /tmp/.buildx-cache-new /tmp/.buildx-cache
