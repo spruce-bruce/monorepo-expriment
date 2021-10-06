@@ -1,4 +1,4 @@
-name: 'Hello World'
+name: 'Build Docker Image -- Synapse Studios'
 description: 'Greet someone'
 inputs:
   who-to-greet:  # id of input
