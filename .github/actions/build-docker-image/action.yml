@@ -1,6 +1,5 @@
 name: 'Build Docker Image -- Synapse Studios'
 description: 'Greet someone'
-shell: bash
 inputs:
   who-to-greet:  # id of input
     description: 'Who to greet'
@@ -12,6 +11,7 @@ outputs:
     value: ${{ steps.random-number-generator.outputs.random-id }}
 runs:
   using: "composite"
+  shell: bash
   steps:
     - name: Checkout
       uses: actions/checkout@v2
