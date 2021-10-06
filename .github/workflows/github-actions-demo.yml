@@ -15,3 +15,8 @@ jobs:
         run: |
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
+  Composite-Job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: make a composite call
+        uses: ./.github/actions/demo
