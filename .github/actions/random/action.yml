@@ -23,17 +23,18 @@ runs:
       run: echo "::set-output name=sha_short::$(git rev-parse --short HEAD)"
       shell: bash
 
-    # - name: Set artifact name output
-    #   id: artifact
-    #   run: |
-    #     echo "::set-output name=artifact_name::${{ env.ECR_URL }}:${{steps.vars.outputs.sha_short}}"
-    #     echo "::set-output name=artifact_name_latest::${{ env.ECR_URL }}:latest"
+    - name: Set artifact name output
+      id: artifact
+      shell: bash
+      run: |
+        echo "::set-output name=artifact_name::${{ env.ECR_URL }}:${{steps.vars.outputs.sha_short}}"
+        echo "::set-output name=artifact_name_latest::${{ env.ECR_URL }}:latest"
 
-    # - name: Build and push
-    #   uses: docker/build-push-action@v2
-    #   with:
-    #     context: .
-    #     push: false
-    #     cache-from: type=local,src=/tmp/.buildx-cache
-    #     cache-to: type=local,dest=/tmp/.buildx-cache-new
-    #     target: service
+    - name: Build and push
+      uses: docker/build-push-action@v2
+      with:
+        context: .
+        push: false
+        cache-from: type=local,src=/tmp/.buildx-cache
+        cache-to: type=local,dest=/tmp/.buildx-cache-new
+        target: service
