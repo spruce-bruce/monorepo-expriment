@@ -18,5 +18,7 @@ jobs:
   Composite-Job:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout
+        uses: actions/checkout@v2
       - name: make a composite call
         uses: ./.github/actions/demo
