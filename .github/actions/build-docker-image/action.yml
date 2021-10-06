@@ -11,7 +11,6 @@ outputs:
     value: ${{ steps.random-number-generator.outputs.random-id }}
 runs:
   using: "composite"
-  shell: bash
   steps:
     - name: Checkout
       uses: actions/checkout@v2
@@ -49,7 +48,7 @@ runs:
         target: service
 
     - name: Move cache
-      # shell: bash
+      shell: bash
       run: |
         rm -rf /tmp/.buildx-cache
         mv /tmp/.buildx-cache-new /tmp/.buildx-cache
