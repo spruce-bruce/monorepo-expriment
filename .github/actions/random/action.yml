@@ -18,9 +18,10 @@ runs:
     - name: Set up Docker Buildx
       uses: docker/setup-buildx-action@v1
 
-    # - name: Set commit output
-    #   id: vars
-    #   run: echo "::set-output name=sha_short::$(git rev-parse --short HEAD)"
+    - name: Set commit output
+      id: vars
+      run: echo "::set-output name=sha_short::$(git rev-parse --short HEAD)"
+      shell: bash
 
     # - name: Set artifact name output
     #   id: artifact
