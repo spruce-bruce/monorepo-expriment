@@ -4,10 +4,10 @@ inputs:
   image_name:
     description: 'Name of the image to create'
     required: true
-  outputs:
-    artifact_name:
-      description: "Unique name for referencing the artifact"
-      value: ${{ steps.artifact.outputs.artifact_name }}
+outputs:
+  artifact_name:
+    description: "Unique name for referencing the artifact"
+    value: ${{ steps.artifact.outputs.artifact_name }}
 runs:
   using: "composite"
   steps:
