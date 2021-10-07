@@ -4,10 +4,10 @@ inputs:
   image_name:
     description: 'Name of the image to create'
     required: true
-outputs:
-  random-number:
-    description: "Random number"
-    value: ${{ steps.random-number-generator.outputs.random-id }}
+  outputs:
+    artifact_name:
+      description: "Unique name for referencing the artifact"
+      value: ${{ steps.artifact.outputs.artifact_name }}
 runs:
   using: "composite"
   steps:
@@ -34,8 +34,7 @@ runs:
       id: artifact
       shell: bash
       run: |
-        echo "::set-output name=artifact_name::${{ inputs.image_name }}:${{steps.vars.outputs.sha_short}}"
-        echo "::set-output name=artifact_name_latest::${{ inputs.image_name }}:latest"
+        echo "::set-output name=artifact_name::${{ inputs.image_name }}.${{steps.vars.outputs.sha_short}}"
 
     - name: Build and push
       uses: docker/build-push-action@v2

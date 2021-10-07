@@ -21,6 +21,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: make a composite call
+        id: build
         uses: ./.github/actions/build-docker-image
         with:
           image_name: some-image
+
+      - run: echo artifact ${{ steps.build.outputs.artifact_name }}
+        shell: bash
