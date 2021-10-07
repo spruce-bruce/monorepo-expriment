@@ -22,3 +22,5 @@ jobs:
         uses: actions/checkout@v2
       - name: make a composite call
         uses: ./.github/actions/build-docker-image
+        with:
+          image_name: some-image

@@ -1,10 +1,10 @@
 name: 'Build Docker Image -- Synapse Studios'
 description: 'Greet someone'
 inputs:
-  who-to-greet:  # id of input
+  image_name:  # id of input
     description: 'Who to greet'
     required: true
-    default: 'World'
+    # default: 'World'
 outputs:
   random-number:
     description: "Random number"
@@ -35,8 +35,8 @@ runs:
       id: artifact
       shell: bash
       run: |
-        echo "::set-output name=artifact_name::${{ env.ECR_URL }}:${{steps.vars.outputs.sha_short}}"
-        echo "::set-output name=artifact_name_latest::${{ env.ECR_URL }}:latest"
+        echo "::set-output name=artifact_name::${{ inputs.image_name }}:${{steps.vars.outputs.sha_short}}"
+        echo "::set-output name=artifact_name_latest::${{ inputs.image_name }}:latest"
 
     - name: Build and push
       uses: docker/build-push-action@v2
