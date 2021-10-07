@@ -1,10 +1,9 @@
 name: 'Build Docker Image -- Synapse Studios'
 description: 'Greet someone'
 inputs:
-  image_name:  # id of input
-    description: 'Who to greet'
+  image_name:
+    description: 'Name of the image to create'
     required: true
-    # default: 'World'
 outputs:
   random-number:
     description: "Random number"
@@ -45,7 +44,15 @@ runs:
         push: false
         cache-from: type=local,src=/tmp/.buildx-cache
         cache-to: type=local,dest=/tmp/.buildx-cache-new
+        outputs: type=docker,dest=/tmp/${{steps.vars.outputs.sha_short}}.tar
         target: service
+
+    - name: Upload artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: build
+        path: /tmp/${{steps.vars.outputs.sha_short}}.tar
+        retention-days: 1
 
     - name: Move cache
       shell: bash
