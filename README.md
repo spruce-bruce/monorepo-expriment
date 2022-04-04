@@ -19,4 +19,5 @@ pm2 start ecosystem.config.js
 ```
 
 ## Docker-compose
+
 To run everything inside of docker instead of with pm2 use `docker-compose -f docker-compose.qa.yml up`. I will use this to run code in a qa environment, but for local dev I will continue to use pm2. The compose config and dockerfile could be updated to make local dev nicer if you wanted to run your whole local env inside of a bunch of containers.
